@@ -1,0 +1,6 @@
+{
+  "name": "TESPROY - Repositorio Académico TESCHI",
+  "description": "Sistema y repositorio de proyectos académicos para alumnos de 7mo a 9no semestre del TESCHI con IA para detección de proyectos abandonados, donación y reasignación académica inteligente.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

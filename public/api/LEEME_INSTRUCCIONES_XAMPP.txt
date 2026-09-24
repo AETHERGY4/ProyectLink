@@ -1,0 +1,43 @@
+========================================================================
+SISTEMA REPOSITORIO DE PROYECTOS TESPROY (7° A 9° SEMESTRE) - TESCHI
+ARCHIVOS DE CONEXIÓN A BASE DE DATOS MYSQL PARA XAMPP (htdocs)
+========================================================================
+
+¿DÓNDE SE COLOCAN ESTOS ARCHIVOS EN TU COMPUTADORA?
+------------------------------------------------------------------------
+1. Ve a tu disco local C:, abre la carpeta de XAMPP:
+   C:\xampp\htdocs\
+
+2. Crea una carpeta llamada "tesproy" (o la que prefieras):
+   C:\xampp\htdocs\tesproy\
+
+3. Dentro de "tesproy", crea la subcarpeta "api":
+   C:\xampp\htdocs\tesproy\api\
+
+4. Copia todos los archivos de esta carpeta aquí:
+   - config.php          -> Configuración de host, usuario y base de datos
+   - conexion.php        -> Conexión PDO y cabeceras CORS
+   - perfil.php          -> Consultar y actualizar perfil del alumno
+   - login.php           -> Login diferenciado (Alumno, Maestro, Admin)
+   - proyectos.php       -> CRUD de proyectos académicos y detección de días inactivos
+   - actividades.php     -> Gestión de tareas y cálculo de progreso
+   - donaciones.php      -> Votación y solicitudes de adopción de código
+   - maestros.php        -> Asignación y evaluación de docentes
+   - test_db.php         -> Script de verificación instantánea
+   - .htaccess           -> Reglas de cabeceras CORS para Apache
+
+------------------------------------------------------------------------
+¿CÓMO VERIFICAR QUE TU BASE DE DATOS ESTÁ FUNCIONANDO?
+------------------------------------------------------------------------
+1. Inicia Apache y MySQL en el Panel de Control de XAMPP.
+2. Abre tu navegador y escribe:
+   http://localhost/tesproy/api/test_db.php
+
+3. Si todo está correcto, verás:
+   {
+     "status": "success",
+     "mensaje": "¡Conexión exitosa a MySQL en XAMPP! La base de datos 'tesproy_db' está lista..."
+   }
+
+¡Listo! Tu base de datos MySQL ya está conectada al 100%.
+========================================================================
